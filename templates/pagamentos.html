@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="{{ url_for('static', filename='pagamentos.css') }}">
+    <title>Consulta de Pagamentos</title>
+</head>
+<body>
+    <h1>Relatório de Contas a Pagar</h1>
+    <form action="/botao" method="post">
+        <label>Selecione qual a empresa deseja emitir:</label>
+        <select id="Empresa" name="Empresa">
+            <option value="Cel Consultoria">Cel Consultoria</option>
+            <option value="Club Gas">Club Gas</option>
+            <option value="Elevaton">Elevaton</option>
+            <option value="Arx">Grupo Arx</option>
+            <option value="Instituto Afeto">Instituto Afeto</option>
+            <option value="Otica Vida">Óticas Vida</option>
+            <option value="Porto Leal">Porto Leal</option>
+            <option value="Protege Car">Protege Car</option>
+            <option value="Projeto Verde">Projeto Verde</option>
+            <option value="Raio">Raio</option>
+            <option value="Speed">Speed</option>
+            <option value="Stone">Stone</option>
+            <option value="Valle">Valle</option>
+            <option value="Protege Todos">Protege Todos</option>
+            <option value="Auto Nacional">Auto Nacional</option>
+            <option value="wr rastreamento">Wr Rastreamento</option>
+            <option value="New Car">New Car</option>
+            <option value="Protege Car Associação">Protege Car Associações</option>
+        </select>
+        <label for="tipoVenc">Tipo de Vencimento:</label>
+        <select id="tipoVenc" name="tipoVenc">
+            <option value="0">Vencidas</option>
+            <option value="1">Vence Hoje</option>
+        </select>
+        <br><br>
+        <button type="submit">Consultar</button>
+    </form>
+</body>
+</html>
